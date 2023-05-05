@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="MaoJugador">
+  <ClassDiagramComponents>
+    <Class name="Equipo" package="com.mycompany.maojugador" visibility="public" xPosition="8.0" yPosition="86.0">
+      <Fields>
+        <Field name="jugadores" type="List&lt;Jugador&gt;" visibility="private"/>
+        <Field name="jugador" type="Jugador" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="getJ1" returnType="List&lt;Jugador&gt;" visibility="public"/>
+        <Method name="setJ1" returnType="void" visibility="public">
+          <Argument type="List&lt;Jugador&gt;" name="jugadores"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Jugador" package="com.mycompany.maojugador" visibility="public" xPosition="378.0" yPosition="20.0">
+      <Fields>
+        <Field name="nombres" type="String" visibility="private"/>
+        <Field name="posicion" type="String" visibility="private"/>
+        <Field name="numero" type="int" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="String" name="nombres"/>
+          <Argument type="String" name="posicion"/>
+          <Argument type="int" name="numero"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getNombres" returnType="String" visibility="public"/>
+        <Method name="setNombres" returnType="void" visibility="public">
+          <Argument type="String" name="nombres"/>
+        </Method>
+        <Method name="getPosicion" returnType="String" visibility="public"/>
+        <Method name="setPosicion" returnType="void" visibility="public">
+          <Argument type="String" name="posicion"/>
+        </Method>
+        <Method name="getNumero" returnType="int" visibility="public"/>
+        <Method name="setNumero" returnType="void" visibility="public">
+          <Argument type="int" name="numero"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="MaoJugador" package="com.mycompany.maojugador" visibility="public" xPosition="185.0" yPosition="378.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <UseRelation source="com.mycompany.maojugador.Equipo" target="com.mycompany.maojugador.Jugador" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="jugadores" source="com.mycompany.maojugador.Equipo" target="com.mycompany.maojugador.Jugador" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="List&lt;Jugador&gt;"/>
+    <HasRelation name="jugador" source="com.mycompany.maojugador.Equipo" target="com.mycompany.maojugador.Jugador" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

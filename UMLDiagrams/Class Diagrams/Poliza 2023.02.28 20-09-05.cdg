@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Poliza">
+  <ClassDiagramComponents>
+    <Class name="Poliza" package="Entidad" visibility="public" xPosition="20.0" yPosition="20.0">
+      <Fields>
+        <Field name="numPoliza" type="int" visibility="private"/>
+        <Field name="fechaInicio" type="Date" visibility="private"/>
+        <Field name="fechaFin" type="Date" visibility="private"/>
+        <Field name="cantCuotas" type="int" visibility="private"/>
+        <Field name="formaPago" type="String" visibility="private"/>
+        <Field name="montoTotal" type="double" visibility="private"/>
+        <Field name="granizo" type="boolean" visibility="private"/>
+        <Field name="montoGranizo" type="double" visibility="private"/>
+        <Field name="cobertura" type="String" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="int" name="numPoliza"/>
+          <Argument type="Date" name="fechaInicio"/>
+          <Argument type="Date" name="fechaFin"/>
+          <Argument type="int" name="cantCuotas"/>
+          <Argument type="String" name="formaPago"/>
+          <Argument type="double" name="montoTotal"/>
+          <Argument type="boolean" name="granizo"/>
+          <Argument type="double" name="montoGranizo"/>
+          <Argument type="String" name="cobertura"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getNumPoliza" returnType="int" visibility="public"/>
+        <Method name="setNumPoliza" returnType="void" visibility="public">
+          <Argument type="int" name="numPoliza"/>
+        </Method>
+        <Method name="getFechaInicio" returnType="Date" visibility="public"/>
+        <Method name="setFechaInicio" returnType="void" visibility="public">
+          <Argument type="Date" name="fechaInicio"/>
+        </Method>
+        <Method name="getFechaFin" returnType="Date" visibility="public"/>
+        <Method name="setFechaFin" returnType="void" visibility="public">
+          <Argument type="Date" name="fechaFin"/>
+        </Method>
+        <Method name="getCantCuotas" returnType="int" visibility="public"/>
+        <Method name="setCantCuotas" returnType="void" visibility="public">
+          <Argument type="int" name="cantCuotas"/>
+        </Method>
+        <Method name="getFormaPago" returnType="String" visibility="public"/>
+        <Method name="setFormaPago" returnType="void" visibility="public">
+          <Argument type="String" name="formaPago"/>
+        </Method>
+        <Method name="getMontoTotal" returnType="double" visibility="public"/>
+        <Method name="setMontoTotal" returnType="void" visibility="public">
+          <Argument type="double" name="montoTotal"/>
+        </Method>
+        <Method name="isGranizo" returnType="boolean" visibility="public"/>
+        <Method name="setGranizo" returnType="void" visibility="public">
+          <Argument type="boolean" name="granizo"/>
+        </Method>
+        <Method name="getMontoGranizo" returnType="double" visibility="public"/>
+        <Method name="setMontoGranizo" returnType="void" visibility="public">
+          <Argument type="double" name="montoGranizo"/>
+        </Method>
+        <Method name="getCobertura" returnType="String" visibility="public"/>
+        <Method name="setCobertura" returnType="void" visibility="public">
+          <Argument type="String" name="cobertura"/>
+        </Method>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations/>
+</ClassDiagram>
